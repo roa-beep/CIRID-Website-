@@ -101,3 +101,188 @@
     background: #F4EBD0;
 }
 
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-width: 475px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+@media only screen and (max-width: 810px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+
+@media only screen and (max-width: 540px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+
+nav {
+  position: fixed;
+  z-index: 5;
+  left: -17.8em;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 5rem;
+  padding-right: 2rem;
+  background: url("https://www.canva.com/design/DAEnslY-ekU/klMhgAiOVe137icKsm-Rnw/screen") center center repeat;
+  font-family: "Proza Libre", serif;
+  font-size: 18px;
+  line-height: 2.2;
+  font-weight: bold;
+  color: #142033;
+
+}
+
+nav:hover {
+  left: 0;
+}
+
+nav .hover-content {
+  margin-right: 3em;
+}
+
+nav h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #B88917;
+}
+
+
+nav ol {
+  list-style: upper-roman outside;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:hover,
+nav a.active {
+  color: #B88917;
+}
+
+/* Header */
+
+header {
+  padding: 3.125rem 13rem;
+  background-color: #142033;
+  text-align: center;
+  font-weight: bold;
+  line-height: 2.1;
+  color: #b3d0ff;
+}
+
+header h1 {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 500;
+  color: #B88917;
+}
+
+header em {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+header h2 {
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 810px) {
+  header {
+    padding: 3.125rem 8rem 3.125rem 10rem;
+  }
+
+  header h1 {
+    font-size: 4rem;
+  }
+
+  header h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Section Content */
+
+.book-content {
+  padding: 4.75rem 20%;
+  background-color: #FFF6EA;
+  font-family: "Proza Libre", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #4a4a4a;
+  cursor: default;
+}
+
+.book-content h3 {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 2.1;
+  font-weight: bold;
+  color: #CDC784;
+}
+
+.book-content .prose {
+  margin-bottom: 4.75rem;
+}
+
+@media only screen and (max-width: 810px) {
+  .book-content {
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .book-content {
+    padding-right: 1%;
+  }
+}
+
+/* Page Navigation Buttons */
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 14rem;
+  padding: 0 2rem;
+  opacity: 0.4;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #B88917;
+
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 930px) {
+  .button {
+    width: auto;
+    padding: 1rem 2rem;
+  }
+
+  .button .action {
+    display: none;
+  }
+}
